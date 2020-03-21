@@ -1,0 +1,292 @@
+[
+  {
+    "id": 0,
+    "name": "hage0",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {
+      "displayed": [],
+      "hidden": [],
+      "started": [],
+      "finished": []
+    },
+    "reward": [
+      {
+        "type": "item",
+        "id": 1,
+        "value": 1
+      },
+      {
+        "type": "gold",
+        "id": 0,
+        "value": 500
+      }
+    ],
+    "requester": ""
+  },
+  {
+    "id": 1,
+    "name": "住民に顔を覚えてもらおう",
+    "cond_s": 3,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {
+      "displayed": [
+        "これからお世話になる住民達に挨拶をして顔を覚えてもらおう。"
+      ],
+      "hidden": [
+        "隠されてる時の表示"
+      ],
+      "started": [
+        "これからお世話になる住民達に挨拶をして顔を覚えてもらおう。２２２"
+      ],
+      "finished": [
+        "これからもっと中を深めて行こうね"
+      ]
+    },
+    "reward": [
+      {
+        "type": "item",
+        "id": 1,
+        "value": 10
+      },
+      {
+        "type": "gold",
+        "id": 0,
+        "value": 500
+      }
+    ],
+    "requester": "はじめに"
+  },
+  {
+    "id": 2,
+    "name": "hage2",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {
+      "displayed": [],
+      "hidden": [],
+      "started": [],
+      "finished": []
+    },
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 3,
+    "name": "hage3",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {
+      "displayed": [],
+      "hidden": [],
+      "started": [],
+      "finished": []
+    },
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 4,
+    "name": "hage4",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 5,
+    "name": "hage5",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 6,
+    "name": "hage6",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 7,
+    "name": "hage7",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 8,
+    "name": "hage8",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 9,
+    "name": "hage9",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 10,
+    "name": "hage10",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 11,
+    "name": "hage11",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 12,
+    "name": "hage12",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 13,
+    "name": "hage13",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 14,
+    "name": "hage14",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 15,
+    "name": "hage15",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 16,
+    "name": "hage16",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 17,
+    "name": "hage17",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 18,
+    "name": "hage18",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  },
+  {
+    "id": 19,
+    "name": "hage19",
+    "cond_s": 0,
+    "cond_v": {
+      "id": 0,
+      "value": 0
+    },
+    "message": {},
+    "reward": [],
+    "requester": ""
+  }
+]
