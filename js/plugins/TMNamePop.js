@@ -218,7 +218,7 @@ if (!Imported.TMEventBase) {
     this.bitmap.outlineWidth = fontOutlineWidth;
     this.bitmap.outlineColor = fontOutlineColor;
     this.anchor.x = 0.5;
-    this.anchor.y = -1;
+    this.anchor.y = 1.2;
   };
 
   Sprite_TMNamePop.prototype.update = function() {

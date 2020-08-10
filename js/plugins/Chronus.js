@@ -6,6 +6,8 @@
 // http://opensource.org/licenses/mit-license.php
 // ----------------------------------------------------------------------------
 // Version
+// 1.17.1 2020/05/17 まったく同じ時間にSET_TIMEしたとき翌日の同時刻になるよう仕様変更
+// 1.17.0 2020/04/12 累計日数をカレンダーに出力できる機能を追加、累計日数のカウントを1からに変更
 // 1.16.2 2019/11/17 1.15.0の修正以後、場所移動したときのタイルセット情報の取得が、移動前のものになっていた問題を修正
 // 1.16.1 2019/11/10 1.16.1で追加したアラーム機能で、アラームに設定した時間を超過して判定された場合、次回のインターバルが超過した時間からカウントされてしまう問題を修正
 // 1.16.0 2019/11/09 1.15.0で追加したアラーム機能にインターバル機能を追加
@@ -275,6 +277,7 @@
  * 日付フォーマットには以下を利用できます。
  * YYYY:年 MON:月名 MM:月 DD:日 HH24:時(24) HH:時(12)
  * AM:午前 or 午後 MI:分 DY:曜日 TZ 時間帯名称
+ * DDALL:累計日数
  *
  * また、規格に沿った画像を用意すればアナログ時計も表示できます。
  * 表示位置は各画像の表示可否は調整できます。
@@ -448,8 +451,8 @@ function Window_Chronus() {
             {name: '朝', start: 7, end: 11, timeId: 2},
             {name: '昼', start: 12, end: 15, timeId: 3},
             {name: '夕方', start: 16, end: 18, timeId: 4},
-            {name: '夜', start: 19, end: 22, timeId: 5},
-            {name: '深夜', start: 23, end: 24, timeId: 0}
+            {name: '夜', start: 19, end: 23, timeId: 5},
+            {name: '深夜', start: 0, end: 4, timeId: 0}
         ],
         /* timeTone:時間帯ごとの色調 */
         timeTone: [
@@ -457,7 +460,7 @@ function Window_Chronus() {
             {timeId: 0, value: [-102, -102, -68, 102]},
             {timeId: 1, value: [-68, -68, 0, 0]},
             {timeId: 2, value: [0, 0, 0, 0]},
-            {timeId: 3, value: [34, 34, 34, 0]},
+            {timeId: 3, value: [0, 0, 0, 0]},
             {timeId: 4, value: [68, -34, -34, 0]},
             {timeId: 5, value: [-68, -68, 0, 68]}
         ]
@@ -1380,7 +1383,7 @@ function Window_Chronus() {
 
     Game_Chronus.prototype.setTime = function(hour, minute) {
         var time = hour * 60 + minute;
-        if (this._timeMeter > time) this.addDay();
+        if (this._timeMeter >= time) this.addDay();
         this._timeMeter = time;
         this.demandRefresh(true);
     };
@@ -1524,6 +1527,9 @@ function Window_Chronus() {
         format = format.replace(/MM/gi, function() {
             return this.getValuePadding(this.getMonth(), String(this.getMonthOfYear()).length);
         }.bind(this));
+        format = format.replace(/DDALL/gi, function() {
+            return this.getValuePadding(this.getTotalDay());
+        }.bind(this));
         format = format.replace(/DD/gi, function() {
             return this.getValuePadding(this.getDay(),
                 String(this.getDaysOfMonth(this.getMonth())).length);
@@ -1617,7 +1623,7 @@ function Window_Chronus() {
     };
 
     Game_Chronus.prototype.getTotalDay = function() {
-        return this.getTotalTime() / (24 * 60);
+        return Math.floor(this.getTotalTime() / (24 * 60)) + 1;
     };
 
     Game_Chronus.prototype.makeAlarm = function(timerName, timeNumber, switchKey, interval) {

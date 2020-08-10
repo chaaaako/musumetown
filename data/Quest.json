@@ -15,11 +15,6 @@
     },
     "reward": [
       {
-        "type": "item",
-        "id": 1,
-        "value": 1
-      },
-      {
         "type": "gold",
         "id": 0,
         "value": 500
@@ -50,11 +45,6 @@
       ]
     },
     "reward": [
-      {
-        "type": "item",
-        "id": 1,
-        "value": 10
-      },
       {
         "type": "gold",
         "id": 0,
