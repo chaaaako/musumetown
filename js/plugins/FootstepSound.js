@@ -171,10 +171,38 @@
         // terrainTag1 → terrainTag2
         terrainTag1: {
             interval: 1,
-            walk1   : {name: '', volume: 90, pitch: 100, pan: 0},
-            walk2   : {name: '', volume: 90, pitch: 100, pan: 0},
-            dash1   : {name: '', volume: 90, pitch: 100, pan: 0},
-            dash2   : {name: '', volume: 90, pitch: 100, pan: 0},
+            walk1: { name: 'work_nomal1', volume: 90, pitch: 150, pan: 0 },
+            walk2: { name: '', volume: 90, pitch: 100, pan: 0 },
+            dash1: { name: 'work_nomal1', volume: 90, pitch: 100, pan: 0 },
+            dash2: { name: '', volume: 90, pitch: 100, pan: 0 },
+        },
+        terrainTag2: {
+            interval: 1,
+            walk1: { name: 'work_kusa1', volume: 100, pitch: 150, pan: 0 },
+            walk2: { name: '', volume: 90, pitch: 100, pan: 0 },
+            dash1: { name: 'work_kusa1', volume: 100, pitch: 100, pan: 0 },
+            dash2: { name: '', volume: 90, pitch: 100, pan: 0 },
+        },
+        terrainTag3: {
+            interval: 1,
+            walk1: { name: 'work_tuti1', volume: 30, pitch: 150, pan: 0 },
+            walk2: { name: '', volume: 90, pitch: 100, pan: 0 },
+            dash1: { name: 'work_tuti1', volume: 30, pitch: 100, pan: 0 },
+            dash2: { name: '', volume: 90, pitch: 100, pan: 0 },
+        },
+        terrainTag4: {
+            interval: 1,
+            walk1: { name: 'work_water', volume: 100, pitch: 150, pan: 0 },
+            walk2: { name: '', volume: 90, pitch: 100, pan: 0 },
+            dash1: { name: 'work_water', volume: 100, pitch: 100, pan: 0 },
+            dash2: { name: '', volume: 90, pitch: 100, pan: 0 },
+        },
+        terrainTag6: {
+            interval: 1,
+            walk1: { name: 'work_yuki2', volume: 30, pitch: 120, pan: 0 },
+            walk2: { name: '', volume: 90, pitch: 100, pan: 0 },
+            dash1: { name: 'work_yuki2', volume: 30, pitch: 100, pan: 0 },
+            dash2: { name: '', volume: 90, pitch: 100, pan: 0 },
         },
         // リージョン 1 通過時の足音（2以降はコピーするか以下の通り値を変更してください）
         // region1 → region2
