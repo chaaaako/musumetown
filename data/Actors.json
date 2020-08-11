@@ -1,6 +1,6 @@
 [
 null,
-{"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"musume_love_rio","classId":1,"equips":[],"faceIndex":3,"faceName":"15ki","traits":[],"initialLevel":1,"maxLevel":99,"name":"水肉パンダさん","nickname":"","note":"","profile":"りお：水を飲むのが大好きな女の子。\\nほま：お肉が大好きな女の子。\\nめい：パンダさんが大好きな女の子。"},
+{"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"musume_love_rio","classId":1,"equips":[],"faceIndex":5,"faceName":"15ki","traits":[],"initialLevel":1,"maxLevel":99,"name":"りお","nickname":"","note":"","profile":"りお：水を飲むのが大好きな女の子。\\nほま：お肉が大好きな女の子。\\nめい：パンダさんが大好きな女の子。"},
 {"id":2,"battlerName":"","characterIndex":0,"characterName":"musume_love_homa","classId":2,"equips":[],"faceIndex":0,"faceName":"15ki","traits":[],"initialLevel":1,"maxLevel":99,"name":"ほま","nickname":"","note":"","profile":"デイジー色の目をした、お肉が大好きな女の子。\nお肉は可愛い。"},
 {"id":3,"battlerName":"","characterIndex":0,"characterName":"musume_love_mei","classId":3,"equips":[],"faceIndex":6,"faceName":"15ki","traits":[],"initialLevel":1,"maxLevel":99,"name":"めい","nickname":"","note":"","profile":"ブライトグリーン色の目をした、パンダさんが大好きな女の子。\nパンダさんをパンダと呼び捨てにすると怒る。"},
 {"id":4,"battlerName":"","characterIndex":0,"characterName":"musume_nowayway_machan","classId":1,"equips":[],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"まさき","nickname":"","note":"","profile":"エメラルドグリーン色の目をした天真爛漫な女の子。"},
